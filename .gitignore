@@ -1,0 +1,13 @@
+# OS / editor files
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Language‑specific (uncomment what you need)
+# node_modules/
+# __pycache__/
+# *.pyc
+# target/
+# build/
+# dist/
