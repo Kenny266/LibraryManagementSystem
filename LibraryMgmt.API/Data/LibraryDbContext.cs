@@ -1,10 +1,9 @@
 using LibraryMgmt.API.Models;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace LibraryMgmt.API.Data;
 
-public class LibraryDbContext : IdentityDbContext<ApplicationUser>
+public class LibraryDbContext : DbContext
 {
     public LibraryDbContext(DbContextOptions<LibraryDbContext> options)
         : base(options)
@@ -17,8 +16,6 @@ public class LibraryDbContext : IdentityDbContext<ApplicationUser>
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        base.OnModelCreating(modelBuilder);
-
         modelBuilder.Entity<Loan>()
             .HasOne(l => l.Member)
             .WithMany(m => m.Loans)

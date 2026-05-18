@@ -1,13 +1,11 @@
 using LibraryMgmt.API.DTOs;
 using LibraryMgmt.API.Services;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LibraryMgmt.API.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-[Authorize]
 public class MembersController : ControllerBase
 {
     private readonly IMembersService _membersService;
@@ -40,7 +38,6 @@ public class MembersController : ControllerBase
     [HttpGet("{id}/loans")]
     public async Task<ActionResult<List<LoanDto>>> GetMemberLoans(int id)
     {
-        // First check if member exists
         var member = await _membersService.GetMemberByIdAsync(id);
         if (member == null)
         {

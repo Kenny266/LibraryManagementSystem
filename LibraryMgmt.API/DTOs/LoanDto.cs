@@ -14,7 +14,6 @@ public class LoanDto
     public LoanStatus Status { get; set; }
     public decimal FineAmount { get; set; }
 
-    // Include related data
     public string MemberName { get; set; } = string.Empty;
     public string BookTitle { get; set; } = string.Empty;
 }

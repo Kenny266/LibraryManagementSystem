@@ -1,13 +1,11 @@
 using LibraryMgmt.API.DTOs;
 using LibraryMgmt.API.Services;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LibraryMgmt.API.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-[Authorize]
 public class BooksController : ControllerBase
 {
     private readonly IBooksService _booksService;
@@ -20,7 +18,6 @@ public class BooksController : ControllerBase
     }
 
     [HttpGet]
-    [AllowAnonymous]
     public async Task<ActionResult<List<BookDto>>> GetBooks(
         [FromQuery] string? category,
         [FromQuery] string? author,
@@ -44,7 +41,6 @@ public class BooksController : ControllerBase
     [HttpGet("{id}/loans")]
     public async Task<ActionResult<List<LoanDto>>> GetBookLoans(int id)
     {
-        // First check if book exists
         var book = await _booksService.GetBookByIdAsync(id);
         if (book == null)
         {
@@ -65,7 +61,7 @@ public class BooksController : ControllerBase
         }
 
         var createdBook = await _booksService.CreateBookAsync(newBook);
-        return CreatedAtAction(nameof(GetBooks), new { id = createdBook.BookId }, createdBook);
+        return CreatedAtAction(nameof(GetBook), new { id = createdBook.BookId }, createdBook);
     }
 
     [HttpPut("{id}")]

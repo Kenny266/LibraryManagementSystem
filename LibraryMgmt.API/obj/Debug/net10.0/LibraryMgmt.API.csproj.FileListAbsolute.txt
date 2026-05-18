@@ -158,8 +158,6 @@ C:\Users\k-oluwasegun\Documents\LibraryManagementSystem\LibraryMgmt.API\obj\Debu
 C:\Users\k-oluwasegun\Documents\LibraryManagementSystem\LibraryMgmt.API\obj\Debug\net10.0\LibraryMgmt.API.pdb
 C:\Users\k-oluwasegun\Documents\LibraryManagementSystem\LibraryMgmt.API\obj\Debug\net10.0\LibraryMgmt.API.genruntimeconfig.cache
 C:\Users\k-oluwasegun\Documents\LibraryManagementSystem\LibraryMgmt.API\obj\Debug\net10.0\ref\LibraryMgmt.API.dll
-C:\Users\k-oluwasegun\Documents\LibraryManagementSystem\LibraryMgmt.API\bin\Debug\net10.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-C:\Users\k-oluwasegun\Documents\LibraryManagementSystem\LibraryMgmt.API\bin\Debug\net10.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\temp\LibraryMgmt.API.Build\appsettings.Development.json
 C:\temp\LibraryMgmt.API.Build\appsettings.json
 C:\temp\LibraryMgmt.API.Build\LibraryMgmt.API.staticwebassets.endpoints.json
@@ -173,3 +171,4 @@ C:\Users\k-oluwasegun\Documents\LibraryManagementSystem\LibraryMgmt.API\bin\Debu
 C:\Users\k-oluwasegun\Documents\LibraryManagementSystem\LibraryMgmt.API\bin\Debug\net10.0\Frontend\package-lock.json
 C:\Users\k-oluwasegun\Documents\LibraryManagementSystem\LibraryMgmt.API\bin\Debug\net10.0\Frontend\package.json
 C:\Users\k-oluwasegun\Documents\LibraryManagementSystem\LibraryMgmt.API\bin\Debug\net10.0\Frontend\tsconfig.json
+c:\Users\k-oluwasegun\Documents\LibraryManagementSystem\LibraryMgmt.API\obj\Debug\net10.0\LibraryMgmt.API.sourcelink.json

@@ -18,6 +18,5 @@ public class Member
     public DateTime DateRegistered { get; set; } = DateTime.UtcNow;
     public MemberStatus Status { get; set; } = MemberStatus.Active;
 
-    // Navigation property
     public ICollection<Loan> Loans { get; set; } = new List<Loan>();
 }

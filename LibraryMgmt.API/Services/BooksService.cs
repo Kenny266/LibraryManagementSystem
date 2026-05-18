@@ -50,11 +50,6 @@ public class BooksService : IBooksService
             throw new InvalidOperationException("ISBN already exists.");
         }
 
-        if (newBookDto.AvailableCopies > newBookDto.TotalCopies)
-        {
-            throw new InvalidOperationException("Available copies cannot exceed total copies.");
-        }
-
         var book = new Book
         {
             Title = newBookDto.Title,
@@ -63,8 +58,8 @@ public class BooksService : IBooksService
             Category = newBookDto.Category,
             Publisher = newBookDto.Publisher,
             YearPublished = newBookDto.YearPublished,
-            TotalCopies = newBookDto.TotalCopies,
-            AvailableCopies = newBookDto.TotalCopies,
+            TotalCopies = 1,
+            AvailableCopies = 1,
             DateAdded = DateTime.UtcNow
         };
 

@@ -1,13 +1,11 @@
 using LibraryMgmt.API.DTOs;
 using LibraryMgmt.API.Services;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LibraryMgmt.API.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-[Authorize]
 public class LoansController : ControllerBase
 {
     private readonly ILoansService _loansService;
