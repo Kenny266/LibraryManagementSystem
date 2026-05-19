@@ -166,9 +166,4 @@ C:\temp\LibraryMgmt.API.Build\LibraryMgmt.API.deps.json
 C:\temp\LibraryMgmt.API.Build\LibraryMgmt.API.runtimeconfig.json
 C:\temp\LibraryMgmt.API.Build\LibraryMgmt.API.dll
 C:\temp\LibraryMgmt.API.Build\LibraryMgmt.API.pdb
-C:\Users\k-oluwasegun\Documents\LibraryManagementSystem\LibraryMgmt.API\bin\Debug\net10.0\Frontend\components.json
-C:\Users\k-oluwasegun\Documents\LibraryManagementSystem\LibraryMgmt.API\bin\Debug\net10.0\Frontend\dist\server\wrangler.json
-C:\Users\k-oluwasegun\Documents\LibraryManagementSystem\LibraryMgmt.API\bin\Debug\net10.0\Frontend\package-lock.json
-C:\Users\k-oluwasegun\Documents\LibraryManagementSystem\LibraryMgmt.API\bin\Debug\net10.0\Frontend\package.json
-C:\Users\k-oluwasegun\Documents\LibraryManagementSystem\LibraryMgmt.API\bin\Debug\net10.0\Frontend\tsconfig.json
 c:\Users\k-oluwasegun\Documents\LibraryManagementSystem\LibraryMgmt.API\obj\Debug\net10.0\LibraryMgmt.API.sourcelink.json
